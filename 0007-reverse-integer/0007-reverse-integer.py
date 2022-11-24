@@ -9,8 +9,8 @@ class Solution(object):
         list_int.reverse()
         #print(list_int)
         if(list_int[-1] == '-'):
-            removed_elem = list_int.pop(-1)
-            list_int.insert(0, removed_elem)
+            list_int.pop(-1)
+            list_int.insert(0, '-')
             
         x = int("".join(list_int))
         #print("rev", rev)
