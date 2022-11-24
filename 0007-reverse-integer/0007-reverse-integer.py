@@ -6,6 +6,7 @@ class Solution(object):
         """
         
         list_int = list(str(x)) 
+        list_int = [i for i in str(x)]
         list_int.reverse()
         #print(list_int)
         if(list_int[-1] == '-'):
