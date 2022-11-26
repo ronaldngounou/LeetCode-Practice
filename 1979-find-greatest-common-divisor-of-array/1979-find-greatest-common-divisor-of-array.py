@@ -4,6 +4,13 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        gcd = 1 
+    
+        for i in range(1 ,min(nums)+1):
+            if min(nums) % i == 0 and max(nums) % i ==0:
+                gcd = i
+        return gcd
+    
 #         div_max = []
 #         div_min = []
 
@@ -18,12 +25,4 @@ class Solution(object):
 #             if elem in div_min:
 #                 common.append(elem)
 #         return max(common)
-        
-        gcd = 1 
-    
-        for i in range(1 ,min(nums)+1):
-            if min(nums) % i == 0 and max(nums) % i ==0:
-                gcd = i
-        return gcd
-  
         
