@@ -8,14 +8,17 @@ class Solution(object):
         nums = (nums1 + nums2)
         nums.sort()
         
-        if len(nums)%2 != 0: #odd 
+        if len(nums)%2 != 0: #odd number of elements
             middle = len(nums) // 2
             return nums[middle]
-        else: #even
+        
+        else: #even number of elements
             middle = len(nums)/2
             print("middle", middle)
             
-            print("n/2",nums[middle-1])
-            print("n/2 + 1",nums[middle])
+            
+            print("middle", nums[middle-1]) #-1 because index in the list starts from 0
+            print("after the middle",nums[middle])
             print((2+3)/2)
-            return (nums[middle-1] + nums[middle])/2.
+            
+            return (nums[middle-1] + nums[middle])/2.   #notice the point to float the value. 
