@@ -7,6 +7,7 @@ class Solution(object):
         """
         target = []
         
+        # As nums[] and index[] have the same length, I can only interate through nums witht the same variable.
         for i in range (0, len(nums)):
             target.insert(index[i], nums[i])
             
