@@ -1,0 +1,19 @@
+class Solution(object):
+    def numIdenticalPairs(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        count = 0
+        dic = {}
+
+        for num in nums:
+            if num in dic:
+                count += dic[num]
+                dic[num] += 1
+            else:
+                dic[num] = 1
+        
+        return count
+            
+            
