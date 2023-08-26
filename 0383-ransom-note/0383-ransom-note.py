@@ -13,7 +13,7 @@ class Solution(object):
         # return true if all the values in magazine are 0
         for ch in magazine:
             if ch in dic_magazine:
-                dic_magazine[ch] = dic_magazine.get(ch) + 1
+                dic_magazine[ch] = dic_magazine.get(ch, 0) + 1
             else:
                  dic_magazine[ch] = 1
         
