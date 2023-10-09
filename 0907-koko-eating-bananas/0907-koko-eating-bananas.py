@@ -19,5 +19,5 @@ class Solution:
             totalHours += math.ceil(piles[i]/hourly)
         return totalHours
     
-    # TC: O(n * max(piles))
-    # TC: O(n * log(n))
+    # TC: O(n * max(piles)): a brute for approach would consist of iterating until the max element in the piles array. We can reduce the time complexity by using a binary search approach and eliminate the half we are sure the minimum will not be inside. 
+    # TC: O(N * log(max(piles))) where N = size of the array and max(piles) is the maximum elmeent in the array
